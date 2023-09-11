@@ -1,4 +1,4 @@
-const express = require('express');
+import express from 'express';
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -18,10 +18,10 @@ app.get('/api/data', (req, res) => {
   const track = req.query.track;
 
   // GitHub URL of the file being run
-  const githubFileURL = 'https://github.com/username/repo/blob/main/file_name.ext';
+  const githubFileURL = 'https://github.com/oghuanlan-kingsley/javascript/blob/main/index.js';
 
   // GitHub URL of the full source code
-  const githubRepoURL = 'https://github.com/username/repo';
+  const githubRepoURL = 'https://github.com/oghuanlan-kingsley/javascript';
 
   // Status Code of Success
   const statusCode = 200;
